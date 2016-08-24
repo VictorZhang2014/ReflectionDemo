@@ -2,6 +2,13 @@
 A demo for iOS was written by Objective-C. Get the list of all classes , includes created by ourselves and system,  or excludes system created.  
 在Objective-C下获取app的所有的类的列表，有包括系统创建的类和自己创建的类列表，也有仅仅是自己创建的类列表
 
+以下有两个方法
+
+test()   获取当前app运行过程中，由开发者(自己)创建的类的列表，不包括运行时系统创建的类
+test2()  获取当前app运行时所用到所有的文件，包括 系统创建的类和开发者创建的类的   列表
+
+请分开测试
+
 
 ```
 
