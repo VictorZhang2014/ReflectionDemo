@@ -2,7 +2,20 @@
 A demo for iOS was written by Objective-C. Get the list of all classes , includes created by ourselves and system,  or excludes system created.  
 在Objective-C下获取app的所有的类的列表，有包括系统创建的类和自己创建的类列表，也有仅仅是自己创建的类列表
 
-以下有两个方法
+
+提供测试的两个方法
+1.可以获取（能直接被程序员修改的）共有类和私有类
+2.可以获取库里的类，如： 
+     1). 通过Cocoapods导入的开源库 (通过test()和test2(),可以获取共有类和私有类)
+     2). .a静态库 (通过test()和test2(),可以获取共有类和私有类)
+     3). .framework静态库 (通过test()和test2(),可以获取共有类和私有类)
+     4). .framework动态库（通过objc_getClassList()可以获取到，也就是测试方法test2()可以，而测试方法test()不可以）
+4.不支持C++的类的获取
+
+测试项目中库的类型说明
+MyDynamicLib.framework 是动态库
+MyFWorkLib.framework   是静态库
+MyLib1.a               是静态库
 ##
 test()   获取当前app运行过程中，由开发者(自己)创建的类的列表，不包括运行时系统创建的类
 ##

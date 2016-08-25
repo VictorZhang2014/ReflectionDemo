@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04E952BE523748DF2AAE9CCD /* libPods-ReflectionDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6301F3079B4AE2E4F9EF3E7 /* libPods-ReflectionDemo.a */; };
+		5799F8FE1D6ED25900D1A3E3 /* libMyLib1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5799F8FB1D6ED25900D1A3E3 /* libMyLib1.a */; };
+		5799F91D1D6ED5CB00D1A3E3 /* MyFWorkLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5799F91C1D6ED5CB00D1A3E3 /* MyFWorkLib.framework */; };
+		5799F93F1D6ED8F900D1A3E3 /* MyDynamicLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5799F93B1D6ED81900D1A3E3 /* MyDynamicLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5799F9431D6ED99700D1A3E3 /* MyDynamicLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5799F9421D6ED95200D1A3E3 /* MyDynamicLib.framework */; };
 		57F81C791D6D76A800C474AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F81C781D6D76A800C474AE /* main.m */; };
 		57F81C7C1D6D76A800C474AE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F81C7B1D6D76A800C474AE /* AppDelegate.m */; };
 		57F81C7F1D6D76A800C474AE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F81C7E1D6D76A800C474AE /* ViewController.m */; };
@@ -18,7 +23,27 @@
 		57F81C961D6D784B00C474AE /* MyClass3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57F81C941D6D784B00C474AE /* MyClass3.cpp */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		5799F9401D6ED8F900D1A3E3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5799F93F1D6ED8F900D1A3E3 /* MyDynamicLib.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		5799F8FB1D6ED25900D1A3E3 /* libMyLib1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMyLib1.a; sourceTree = "<group>"; };
+		5799F8FC1D6ED25900D1A3E3 /* MyLib1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLib1.h; sourceTree = "<group>"; };
+		5799F8FD1D6ED25900D1A3E3 /* MyLib2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLib2.h; sourceTree = "<group>"; };
+		5799F91C1D6ED5CB00D1A3E3 /* MyFWorkLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MyFWorkLib.framework; sourceTree = "<group>"; };
+		5799F93B1D6ED81900D1A3E3 /* MyDynamicLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MyDynamicLib.framework; sourceTree = "<group>"; };
+		5799F9421D6ED95200D1A3E3 /* MyDynamicLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MyDynamicLib.framework; sourceTree = "<group>"; };
 		57F81C741D6D76A700C474AE /* ReflectionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReflectionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57F81C781D6D76A800C474AE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		57F81C7A1D6D76A800C474AE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -35,6 +60,9 @@
 		57F81C921D6D778A00C474AE /* MyClass2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyClass2.m; sourceTree = "<group>"; };
 		57F81C941D6D784B00C474AE /* MyClass3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MyClass3.cpp; sourceTree = "<group>"; };
 		57F81C951D6D784B00C474AE /* MyClass3.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MyClass3.hpp; sourceTree = "<group>"; };
+		78E78AA9352B3230E0575469 /* Pods-ReflectionDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReflectionDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReflectionDemo/Pods-ReflectionDemo.release.xcconfig"; sourceTree = "<group>"; };
+		97C697D8870DAFAA172CB550 /* Pods-ReflectionDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReflectionDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReflectionDemo/Pods-ReflectionDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		B6301F3079B4AE2E4F9EF3E7 /* libPods-ReflectionDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReflectionDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,17 +70,93 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5799F9431D6ED99700D1A3E3 /* MyDynamicLib.framework in Frameworks */,
+				04E952BE523748DF2AAE9CCD /* libPods-ReflectionDemo.a in Frameworks */,
+				5799F91D1D6ED5CB00D1A3E3 /* MyFWorkLib.framework in Frameworks */,
+				5799F8FE1D6ED25900D1A3E3 /* libMyLib1.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		47A4D517B31AE9EDE6B0E485 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5799F9411D6ED95200D1A3E3 /* MyDlib */,
+				B6301F3079B4AE2E4F9EF3E7 /* libPods-ReflectionDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5799F8E61D6ED00B00D1A3E3 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				5799F93A1D6ED81900D1A3E3 /* MyDlib */,
+				5799F91B1D6ED5CB00D1A3E3 /* MyFWorkLib */,
+				5799F8F81D6ED25900D1A3E3 /* Mylib1 */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		5799F8F81D6ED25900D1A3E3 /* Mylib1 */ = {
+			isa = PBXGroup;
+			children = (
+				5799F8F91D6ED25900D1A3E3 /* iPhone */,
+				5799F8FA1D6ED25900D1A3E3 /* Simulator */,
+			);
+			path = Mylib1;
+			sourceTree = "<group>";
+		};
+		5799F8F91D6ED25900D1A3E3 /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = iPhone;
+			sourceTree = "<group>";
+		};
+		5799F8FA1D6ED25900D1A3E3 /* Simulator */ = {
+			isa = PBXGroup;
+			children = (
+				5799F8FB1D6ED25900D1A3E3 /* libMyLib1.a */,
+				5799F8FC1D6ED25900D1A3E3 /* MyLib1.h */,
+				5799F8FD1D6ED25900D1A3E3 /* MyLib2.h */,
+			);
+			path = Simulator;
+			sourceTree = "<group>";
+		};
+		5799F91B1D6ED5CB00D1A3E3 /* MyFWorkLib */ = {
+			isa = PBXGroup;
+			children = (
+				5799F91C1D6ED5CB00D1A3E3 /* MyFWorkLib.framework */,
+			);
+			path = MyFWorkLib;
+			sourceTree = "<group>";
+		};
+		5799F93A1D6ED81900D1A3E3 /* MyDlib */ = {
+			isa = PBXGroup;
+			children = (
+				5799F93B1D6ED81900D1A3E3 /* MyDynamicLib.framework */,
+			);
+			path = MyDlib;
+			sourceTree = "<group>";
+		};
+		5799F9411D6ED95200D1A3E3 /* MyDlib */ = {
+			isa = PBXGroup;
+			children = (
+				5799F9421D6ED95200D1A3E3 /* MyDynamicLib.framework */,
+			);
+			path = MyDlib;
+			sourceTree = "<group>";
+		};
 		57F81C6B1D6D76A700C474AE = {
 			isa = PBXGroup;
 			children = (
+				5799F8E61D6ED00B00D1A3E3 /* Library */,
 				57F81C761D6D76A800C474AE /* ReflectionDemo */,
 				57F81C751D6D76A700C474AE /* Products */,
+				BEE2479234C9EE0505BD6549 /* Pods */,
+				47A4D517B31AE9EDE6B0E485 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +198,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		BEE2479234C9EE0505BD6549 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				97C697D8870DAFAA172CB550 /* Pods-ReflectionDemo.debug.xcconfig */,
+				78E78AA9352B3230E0575469 /* Pods-ReflectionDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -101,9 +214,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 57F81C8B1D6D76A900C474AE /* Build configuration list for PBXNativeTarget "ReflectionDemo" */;
 			buildPhases = (
+				D9927EC94FB76BAE9EDD017C /* 📦 Check Pods Manifest.lock */,
 				57F81C701D6D76A700C474AE /* Sources */,
 				57F81C711D6D76A700C474AE /* Frameworks */,
 				57F81C721D6D76A700C474AE /* Resources */,
+				0B20351FACDF226F6421E25A /* 📦 Embed Pods Frameworks */,
+				3FBA076D12BC14B222CA2838 /* 📦 Copy Pods Resources */,
+				5799F9401D6ED8F900D1A3E3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -158,6 +275,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B20351FACDF226F6421E25A /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReflectionDemo/Pods-ReflectionDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3FBA076D12BC14B222CA2838 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReflectionDemo/Pods-ReflectionDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9927EC94FB76BAE9EDD017C /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		57F81C701D6D76A700C474AE /* Sources */ = {
@@ -279,11 +444,38 @@
 		};
 		57F81C8C1D6D76A900C474AE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97C697D8870DAFAA172CB550 /* Pods-ReflectionDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MyFWorkLib",
+					"$(PROJECT_DIR)/MyDlib",
+				);
 				INFOPLIST_FILE = ReflectionDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Mylib1/iPhone",
+					"$(PROJECT_DIR)/Mylib1/Simulator",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"ZRAlertController\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoruigege.ReflectionDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -291,11 +483,38 @@
 		};
 		57F81C8D1D6D76A900C474AE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78E78AA9352B3230E0575469 /* Pods-ReflectionDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MyFWorkLib",
+					"$(PROJECT_DIR)/MyDlib",
+				);
 				INFOPLIST_FILE = ReflectionDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Mylib1/iPhone",
+					"$(PROJECT_DIR)/Mylib1/Simulator",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"ZRAlertController\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoruigege.ReflectionDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -320,6 +539,7 @@
 				57F81C8D1D6D76A900C474AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

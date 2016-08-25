@@ -13,6 +13,8 @@
 #import "MyClass2.h"
 
 
+#import "MyLib1.h"
+
 //http://stackoverflow.com/questions/19298553/get-list-of-all-native-classes
 //这个stackoverflow上有说明
 
